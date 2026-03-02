@@ -57,9 +57,9 @@ export default function App() {
   }, [filters]);
 
   return (
-    <main className="mx-auto max-w-5xl p-6">
-      <h1 className="mb-2 text-3xl font-bold">Public Advisory Timeline</h1>
-      <p className="mb-6 text-slate-300">Unified stream of official public advisories.</p>
+    <main className="mx-auto min-h-screen max-w-5xl px-6 py-10">
+      <h1 className="mb-2 text-3xl font-bold tracking-tight text-slate-900">Public Advisory Timeline</h1>
+      <p className="mb-6 text-slate-700">Unified stream of official public advisories.</p>
       <FilterPanel filters={filters} onChange={setFilters} />
       <section className="space-y-4">
         {advisories.map((advisory) => (
